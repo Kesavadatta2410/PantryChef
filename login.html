@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PantryChef</title>
+    <link rel="stylesheet" href="/static/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <span>PantryChef</span>
+                    </a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="generator.html">Recipe Generator</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="contact.html">Feedback & Queries</a></li>
+                    </ul>
+                </div>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline active">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="container">
+                <div class="auth-container">
+                    <div class="auth-image">
+                        <img src="/assets/ingredient.jpeg" alt="Cooking illustration">
+                    </div>
+                    <div class="auth-form-container">
+                        <div class="auth-form-header">
+                            <h1>Welcome Back!</h1>
+                            <p>Log in to access your personalized recipe suggestions</p>
+                        </div>
+                        <form class="auth-form" id="loginForm">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <div class="input-icon">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                    <button type="button" class="password-toggle" onclick="togglePassword('password')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-options">
+                                <div class="remember-me">
+                                    <input type="checkbox" id="remember" name="remember">
+                                    <label for="remember">Remember me</label>
+                                </div>
+                                <a href="#" class="forgot-password">Forgot password?</a>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-block" onclick="window.location.href='index.html'">Log In</button>
+
+                            <div class="or-divider">
+                                <span>or</span>
+                            </div>
+                            <div class="social-login">
+                                <button type="button" class="btn-social btn-google">
+                                    <i class="fab fa-google"></i>
+                                    Continue with Google
+                                </button>
+                                <button type="button" class="btn-social btn-facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Continue with Facebook
+                                </button>
+                                <button type="button" class="btn-social btn-apple">
+                                    <i class="fab fa-apple"></i>
+                                    Continue with Apple
+                                </button>
+                            </div>
+                        </form>
+                        <div class="auth-form-footer">
+                            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/api/placeholder/120/40" alt="PantryChef Logo">
+                    <p>PantryChef - Smart Recipe Suggestions</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="generator.html">Recipe Generator</a></li>
+                            <li><a href="community.html">Community</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Account</h3>
+                        <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="#">My Profile</a></li>
+                            <li><a href="#">Saved Recipes</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PantryChef. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Firebase configuration (Replace with actual credentials)
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAcx-nW5PtiatRDczSnf1a3Qyhb1vBJ5aE",
+  authDomain: "destinease-dfc29.firebaseapp.com",
+  projectId: "destinease-dfc29",
+  storageBucket: "destinease-dfc29.firebasestorage.app",
+  messagingSenderId: "927489700501",
+  appId: "1:927489700501:web:a1e559bf7ac60fd9ec619c",
+  measurementId: "G-KG1LFZJT4Q"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+// Email & Password Login
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+
+    if (!email || !password) {
+        alert("Please enter both email and password.");
+        return;
+    }
+
+    auth.signInWithEmailAndPassword(email, password)
+        .then((userCredential) => {
+            alert("Login successful! Redirecting...");
+            window.location.href = 'index.html'; // Redirect to home page
+        })
+        .catch((error) => {
+            console.error("Login Error:", error.message);
+            alert(error.message);
+        });
+});
+
+// Google Login
+document.getElementById('googleLogin').addEventListener('click', function() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    
+    auth.signInWithPopup(provider)
+        .then((result) => {
+            alert("Google Login successful! Redirecting...");
+            window.location.href = 'index.html';
+        })
+        .catch((error) => {
+            console.error("Google Login Error:", error.message);
+            alert(error.message);
+        });
+});
+
+// Password Visibility Toggle
+function togglePassword(inputId) {
+    const input = document.getElementById(inputId);
+    const icon = input.nextElementSibling.querySelector('i');
+
+    if (input.type === 'password') {
+        input.type = 'text';
+        icon.classList.remove('fa-eye');
+        icon.classList.add('fa-eye-slash');
+    } else {
+        input.type = 'password';
+        icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
+    }
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PantryChef - Smart Recipe Suggestions</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/assets/logo.png" alt="PantryChef Logo"> 
+                    </a>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="generator.html">Recipe Generator</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="contact.html">Feedback & Queries</a></li>
+                    </ul>
+                </div>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="box-container">
+                        <div class="glow-spot"></div>
+                        <div class="glow-spot"></div>
+                        <div class="glow-spot"></div>
+                        <div class="wave-bg"></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div><div></div><div></div><div></div><div></div><div></div>
+
+
+                    <h1>Transform Your Kitchen Ingredients Into Delicious Meals</h1>
+                    <p>Enter what you have or snap a photo of your ingredients, and let our AI suggest perfect recipes tailored just for you.</p>
+                    <div class="hero-buttons">
+                        <a href="generator.html" class="btn btn-primary btn-large">Start Cooking <i class="fas fa-arrow-right"></i></a>
+                        <a href="#how-it-works" class="btn btn-outline btn-large">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/assets/chef.jpeg" alt="Food ingredients and recipes">
+                </div>
+            </div>
+        </section>
+        <section class="trend foods" id="trending-foods">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trending Foods</h2>
+                    <p>Discover the latest and most popular recipes</p>
+                </div>
+                <div class="trend-cards">
+                    <div class="trend-card">
+                        <img src="/assets/res1.jpg" alt="Breakfast recipe">
+                        <h3>Shavarma</h3>
+                        <p>Discover new and delicious breakfast recipes</p>
+                    </div>
+                    <div class="trend-card">
+                        <img src="/assets/res2.jpg" alt="Lunch recipe">
+                        <h3>Roti</h3>
+                        <p>Find healthy and delicious lunch recipes</p>
+                    </div>
+                    <div class="trend-card">
+                        <img src="/assets/res3.jpg" alt="Dinner recipe">
+                        <h3>Chicken</h3>
+                        <p>Eat great dinner with our homemade recipes</p>
+                    </div>
+                    <div class="trend-card">
+                        <img src="/assets/res4.jpg" alt="Dinner recipe">
+                        <h3>Samosa</h3>
+                        <p>Eat great dinner with our homemade recipes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                    <p>Get personalized recipes in three simple steps</p>
+                </div>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-list-ul"></i>
+                        </div>
+                        <h3>Enter Your Ingredients</h3>
+                        <p>Type in what you have in your pantry or refrigerator</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Or Upload Photos</h3>
+                        <p>Let our AI identify your ingredients from pictures</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Get Recipes</h3>
+                        <p>Receive customized recipes based on what you have</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Features You'll Love</h2>
+                    <p>Making cooking easier and more enjoyable</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI-Powered Suggestions</h3>
+                        <p>Get intelligent recipe recommendations based exactly on what you have available</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>Image Recognition</h3>
+                        <p>Our advanced ML model identifies ingredients directly from your photos</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community Sharing</h3>
+                        <p>Share your culinary creations and discover recipes from other food enthusiasts</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <h3>Customizable Preferences</h3>
+                        <p>Filter by dietary requirements, cuisine type, cooking time, and more</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Users Say</h2>
+                    <p>Join thousands of happy home chefs</p>
+                </div>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"This app has completely transformed how I cook! No more wasted ingredients or boring meals. I simply enter what I have, and I get amazing recipes every time."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/assets/1.jpg" alt="User Avatar" class="avatar">
+                            <div class="author-info">
+                                <h4>Emma Wilson</h4>
+                                <p>Home Cook</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"The image recognition feature is incredible. I just snap photos of my fridge contents, and it suggests recipes I would never have thought of. Saved me so much time and money!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/assets/2.jpg" alt="User Avatar" class="avatar">
+                            <div class="author-info">
+                                <h4>James Chen</h4>
+                                <p>Busy Professional</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"As a student with limited ingredients and budget, this app has been a game-changer. I've learned to cook so many delicious meals with just a few basic ingredients!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/assets/3.jpg" alt="User Avatar" class="avatar">
+                            <div class="author-info">
+                                <h4>Sophia Rodriguez</h4>
+                                <p>University Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Cooking?</h2>
+                    <p>Join PantryChef today and turn your available ingredients into delicious meals!</p>
+                    <a href="signup.html" class="btn btn-primary btn-large">Sign Up Free</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/assets/logo.png" alt="PantryChef Logo">
+                    <p>PantryChef - Smart Recipe Suggestions</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="generator.html">Recipe Generator</a></li>
+                            <li><a href="community.html">Community</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Account</h3>
+                        <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                            <li><a href="#">My Profile</a></li>
+                            <li><a href="#">Saved Recipes</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Subscribe to Our Newsletter</h3>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PantryChef. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
